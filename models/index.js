@@ -1,7 +1,7 @@
 const models = {
-    userModel: require("./nosql/user"),
-    guestModel: require("./nosql/guest"),
-    reservationModel: require("./nosql/reservation"),
+    userModel: require("./nosql/userModel"),
+    guestModel: require("./nosql/guestModel"),
+    reservationModel: require("./nosql/reservationModel"),
 }
 
 module.exports = models;

@@ -9,6 +9,7 @@ const reservationSchema = new mongoose.Schema({
 },
     {
         timestamps: true,
+        versionKey: false,
     }
 );
 

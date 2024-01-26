@@ -1,13 +1,14 @@
 import { Router } from "express";
 import { getItem, getItems, createItem, updateItem, deleteItem } from "../controllers/roleController";
 import { checkJwt } from "../middleware/session";
+import { checkRole } from "../middleware/role";
 
 const router = Router();
 
 /*
 * http://localhost:3000/role -> GET
 */
-router.get("/", checkJwt, getItems);
+router.get("/", checkJwt, checkRole(1), getItems);
 
 /*
 * http://localhost:3000/role/1 -> GET

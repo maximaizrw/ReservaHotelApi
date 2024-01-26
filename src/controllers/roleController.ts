@@ -1,8 +1,6 @@
 import { Request, Response } from 'express';
 import { handleHttp } from '../utils/error.handle';
-import { RoleModel } from '../models/role';
 import { insertRole, getRoles, getRole,deleteRole,updateRole } from '../services/role';
-import { get } from 'http';
 
 
 const getItem = async (req: Request, res: Response) => {
